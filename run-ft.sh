@@ -1,0 +1,1 @@
+numactl --interleave=all ./mongod --dbpath=/data/flash/mongo-sysb-ft/ --storageEngine=PerconaFT --PerconaFTEngineCacheSize=$(( 10*1024*1024*1024 )) --PerconaFTIndexFanout=128 --PerconaFTCollectionFanout=128 --PerconaFTIndexCompression=quicklz --PerconaFTCollectionCompression=quicklz --PerconaFTIndexReadPageSize=16384  --PerconaFTCollectionReadPageSize=16384
